@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD DEVSTACK | Software Engineering & Digital Solutions</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        .brand {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            color: var(--text-main);
+            margin: 0;
+        }
+        .brand span { color: var(--accent); }
+        .tagline {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+        .services, .apps-placeholder {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        h2 { color: var(--accent); font-size: 1.3rem; margin-top: 0; }
+        ul { padding-left: 1.2rem; color: var(--text-muted); }
+        li { margin-bottom: 0.5rem; }
+        footer {
+            background: #020617;
+            border-top: 1px solid var(--border);
+            padding: 2rem 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        .footer-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        @media (min-width: 600px) {
+            .footer-container { grid-template-columns: 1fr 1fr; }
+        }
+        .footer-legal a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .footer-legal a:hover { text-decoration: underline; }
+        .legal-notice {
+            grid-column: 1 / -1;
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="brand">AD <span>DEVSTACK</span></h1>
+        <p class="tagline">Full-Stack Software Engineering & Mobile Solutions</p>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Υπηρεσίες / Services</h2>
+            <ul>
+                <li>Full-Stack Web & API Development</li>
+                <li>Mobile Application Engineering (iOS & Android)</li>
+                <li>AI Integration & Cloud Architecture</li>
+            </ul>
+        </section>
+
+        <section class="apps-placeholder">
+            <h2>Mobile Applications</h2>
+            <p style="color: var(--text-muted);">Οι εφαρμογές μας θα είναι διαθέσιμες σύντομα στο Google Play Store και App Store.</p>
+            <!-- Τα links για τα app landing pages θα προστεθούν εδώ αργότερα -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <strong style="color: var(--text-main);">AD DEVSTACK</strong><br>
+                Ατομική Επιχείρηση / Software Development Services<br>
+                <strong>Έδρα:</strong> [Διεύθυνση Virtual Office], [Τ.Κ.], [Πόλη], Ελλάδα<br>
+                <strong>Email:</strong> contact@addevstack.com
+            </div>
+            <div>
+                <strong>Φορολογικά Στοιχεία:</strong><br>
+                <strong>ΑΦΜ:</strong> ELXXXXXXXXX<br>
+                <strong>Αρ. ΓΕΜΗ:</strong> XXXXXXXXXXXX<br>
+                <strong>ΔΟΥ:</strong> [Η ΔΟΥ σας]
+            </div>
+            <div class="footer-legal">
+                <a href="/privacy.html">Website Privacy Policy</a> | 
+                <a href="mailto:contact@addevstack.com">Contact Support</a>
+            </div>
+            <div class="legal-notice">
+                © 2026 AD DEVSTACK. All rights reserved. Compliant with EU Digital Services Act (DSA).
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
